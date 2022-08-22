@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Baz00k/dotenv-vault-github-actions/issues"
   },
-  "homepage": "https://github.com/Baz00k/dotenv-vault-github-actions#readme"
+  "homepage": "https://github.com/Baz00k/dotenv-vault-github-actions#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1"
+  }
 }
