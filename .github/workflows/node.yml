@@ -15,6 +15,9 @@ jobs:
         
       - name: Populate .env
         run: npx dotenv-vault pull ${{ secrets.DOTENV_ME }}
+      
+      - name: Show all files
+        run: ls -la
         
       - name: Run app
         run: npm run dev
