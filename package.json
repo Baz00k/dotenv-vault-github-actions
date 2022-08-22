@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Baz00k/dotenv-vault-github-actions#readme",
   "dependencies": {
-    "dotenv": "^16.0.1"
+    "dotenv": "^16.0.1",
+    "dotenv-vault": "^1.11.2"
   }
 }
