@@ -2,3 +2,5 @@
 .env*
 !.env.project
 !.env.vault
+
+node_modules
