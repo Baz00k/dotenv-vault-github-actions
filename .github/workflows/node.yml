@@ -14,7 +14,7 @@ jobs:
       - run: npm ci
         
       - name: Populate .env
-        run: dotenv-vault pull -m ${{ secrets.DOTENV_ME }}
+        run: dotenv-vault pull -m -y ${{ secrets.DOTENV_ME }}
       
       - name: Show all files
         run: ls -la
