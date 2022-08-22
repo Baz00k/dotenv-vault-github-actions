@@ -14,4 +14,4 @@ jobs:
       - run: npm ci
         
       - name: Populate .env
-      - run: npx dotenv-vault pull ${{ secrets.DOTENV_ME }}
+        run: npx dotenv-vault pull ${{ secrets.DOTENV_ME }}
