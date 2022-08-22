@@ -15,3 +15,5 @@ jobs:
         
       - name: Populate .env
         run: npx dotenv-vault pull ${{ secrets.DOTENV_ME }}
+      - name: Echo .env
+        run: cat .env
