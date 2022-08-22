@@ -1,0 +1,19 @@
+name: Vault
+on:
+  - workflow_dispatch
+jobs:
+  env:
+    name: Get .env
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          cache: 'npm'
+      - run: npm ci
+        
+      - name: Populate .env
+      - run: npx dotenv-vault pull ${{ secrets.DOTENV_ME }}
