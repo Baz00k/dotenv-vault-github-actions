@@ -13,11 +13,14 @@ jobs:
           cache: 'npm'
       - run: npm ci
         
+      # Use GitHub secrets to store Vault token
       - name: Populate .env
         run: npx dotenv-vault pull -m ${{ secrets.DOTENV_ME }} -y
       
+      # .env file is now available in the workspace
       - name: Show all files
         run: ls -la
         
+      # and visible for the app
       - name: Run app
         run: npm run start
