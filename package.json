@@ -4,14 +4,13 @@
   "description": "An example on how to use dotenv-vault with GitHub Actions",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node index.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Baz00k/dotenv-vault-github-actions.git"
   },
-  "author": "",
+  "author": "Jakub Buzuk",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Baz00k/dotenv-vault-github-actions/issues"
