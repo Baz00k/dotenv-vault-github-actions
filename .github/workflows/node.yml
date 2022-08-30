@@ -20,4 +20,4 @@ jobs:
         run: ls -la
         
       - name: Run app
-        run: npm run dev
+        run: npm run start
